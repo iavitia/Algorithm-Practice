@@ -12,6 +12,16 @@ function reverse(str) {
     .reverse()
     .join("");
   return newStr;
+
+  // Solution without using reverse()
+  // let reversed = "";
+  // for (let character of str) {
+  //   reversed = character + reversed;
+  // }
+  // return reversed;
+
+  // Solution using reduce
+  // return str.split("").reduce((rev, char) => char + rev, "");
 }
 
 module.exports = reverse;
